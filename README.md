@@ -1,6 +1,6 @@
 # asteroids
 
-Overview
+## Overview
 This project is a Python-based clone of the classic arcade game Asteroids. The game involves controlling a spaceship to shoot and destroy asteroids that drift across the screen. The goal is to survive as long as possible by avoiding collisions with asteroids and enemies.
 
 ## Features
