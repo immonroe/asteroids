@@ -31,10 +31,9 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
-        
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_SPACE:
-                player.shoot(shots)
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    player.shoot(shots)
 
         for obj in updatable:
             if isinstance(obj, Player):
@@ -43,6 +42,10 @@ def main():
                 obj.update(dt)
 
         for asteroid in asteroids:
+            for shot in shots:
+                if asteroid.collides_with(shot):
+                    asteroid.split()
+                    shot.kill()
             if asteroid.collides_with(player):
                 print("Game over!")
                 sys.exit()
