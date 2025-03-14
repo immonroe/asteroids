@@ -9,6 +9,8 @@ This project is a Python-based clone of the classic arcade game Asteroids. The g
 - Collision Detection: Real-time detection and response to collisions between the spaceship, bullets, and asteroids.
 - Game Over Condition: The game ends when the spaceship collides with an asteroid.
 
+![GIF](https://storage.googleapis.com/qvault-webapp-dynamic-assets/course_assets/YmSwzVB.gif)
+
 ## Installation
 To run the game, follow these steps:
 
